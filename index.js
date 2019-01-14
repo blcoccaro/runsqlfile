@@ -70,6 +70,6 @@ var databases = JSON.parse(fs.readFileSync(config.paths.databases, 'utf8'));
         process.exit();
     } catch (err) {
         console.log(err);
-        process.exit();
+        process.exit(1);
     }
 })()
