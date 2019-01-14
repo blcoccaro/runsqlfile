@@ -52,6 +52,11 @@ var databases = JSON.parse(fs.readFileSync(config.paths.databases, 'utf8'));
                     content = replace(content, "alter procedure", "CREATE PROCEDURE", false, true);
                     console.log(content);
                 }
+                if (contains(content, "create procedure", false) && procExist) {
+                    console.log(`warning: procedure exist but founded CREATE PROCEDURE in file. Changing now to ALTER PROCEDURE only o runtime.`);
+                    content = replace(content, "create procedure", "ALTER PROCEDURE", false, true);
+                    console.log(content);
+                }
                 let result = await pool.request().query(content);
                 process.stdout.write(` executed.`);
                 process.stdout.write("\n");
