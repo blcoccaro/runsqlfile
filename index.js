@@ -48,12 +48,12 @@ var databases = JSON.parse(fs.readFileSync(config.paths.databases, 'utf8'));
                 content = `--Generated at ${moment().format("YYYY-MM-DD HH:mm:ss")} using runsqlFile v.${pjson.version} \n ${content}`;
     
                 if (contains(content, "alter procedure", false) && !procExist) {
-                    console.log(`warning: procedure doesn't but founded ALTER PROCEDURE in file. Changing now to CREATE PROCEDURE only o runtime.`);
+                    //console.log(`warning: procedure doesn't but founded ALTER PROCEDURE in file. Changing now to CREATE PROCEDURE only o runtime.`);
                     content = replace(content, "alter procedure", "CREATE PROCEDURE", false, true);
                     //console.log(content);
                 }
                 if (contains(content, "create procedure", false) && procExist) {
-                    console.log(`warning: procedure exist but founded CREATE PROCEDURE in file. Changing now to ALTER PROCEDURE only o runtime.`);
+                    //console.log(`warning: procedure exist but founded CREATE PROCEDURE in file. Changing now to ALTER PROCEDURE only o runtime.`);
                     content = replace(content, "create procedure", "ALTER PROCEDURE", false, true);
                     //console.log(content);
                 }
