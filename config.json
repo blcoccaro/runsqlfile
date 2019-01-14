@@ -1,8 +1,8 @@
 {
     "paths": {
-        "sqlFiles": "__SQLFILES__",
-        "connectionstring": "__CNN__",
-        "databases": "__DATABASES__"
+        "sqlFiles": "/drone/src/sps/ci",
+        "connectionstring": "/drone/src/jsons/cnn.json",
+        "databases": "/drone/src/jsons/database.json"
     },
     "throwErrorIfNotExist": false
 }
