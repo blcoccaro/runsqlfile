@@ -1,0 +1,24 @@
+{
+  "name": "runsqlfile",
+  "version": "0.1.0",
+  "description": "run .sql file script into multiple databases",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blcoccaro/runsqlfile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blcoccaro/runsqlfile/issues"
+  },
+  "homepage": "https://github.com/blcoccaro/runsqlfile#readme",
+  "dependencies": {
+    "moment": "^2.23.0",
+    "mssql": "^4.3.0",
+    "strman": "^2.0.1"
+  }
+}

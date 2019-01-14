@@ -1,0 +1,8 @@
+{
+    "paths": {
+        "sqlFiles": "/opt/github/teste/sps/ci",
+        "connectionstring": "/opt/github/teste/cnn.json",
+        "databases": "/opt/github/teste/database.json"
+    },
+    "throwErrorIfNotExist": false
+}
