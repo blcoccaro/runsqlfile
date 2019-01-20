@@ -67,6 +67,8 @@ var databases = JSON.parse(fs.readFileSync(config.paths.databases, 'utf8'));
             sql.close();
         }
         
+        console.log(`...and that's the end!`);
+        console.log(" ---- ");
         process.exit();
     } catch (err) {
         console.log(err);
