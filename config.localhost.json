@@ -1,0 +1,8 @@
+{
+    "paths": {
+        "sqlFiles": "/opt/bitbucket/to-database/sps/ci",
+        "connectionstring": "/opt/bitbucket/to-database/jsons/cnn.localhost.json",
+        "databases": "/opt/bitbucket/to-database/jsons/database.localhost.json"
+    },
+    "throwErrorIfNotExist": false
+}
